@@ -20,15 +20,24 @@ namespace OOP_Example_1
 
         public virtual bool IsNocturnal {get{return _isNocturnal;} set{_isNocturnal = value;}}
 
-        public virtual void Eat()
+        public void Eat()
         {
+            if(IsCarnivore)
+                Console.WriteLine(Name + " eats meat");
 
+            else
+                Console.WriteLine(Name + " does not eat meat");
         }
 
-        public virtual void Sleep()
+        public void Sleep()
         {
+            if(IsNocturnal)
+                Console.WriteLine(Name + " sleeps during the day");
 
+            else
+                Console.WriteLine(Name + " does not sleep during the day.");
         }
+
 
         public virtual void FeedYoung()
         {
