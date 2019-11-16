@@ -12,15 +12,13 @@ namespace OOP_Example_1
 
         private bool _isNocturnal;
 
-        public string Name {get{return _name;} set{;}}
+        public virtual string Name {get{return _name;} set{_name = value;}}
 
-        public bool HasMammories {get{return _hasMammories;} set{;}}
+        public virtual bool HasMammories {get{return _hasMammories;} set{_hasMammories = value;}}
 
-        public bool IsCarnivore {get{return _isCarnivore;} set{;}}
+        public virtual bool IsCarnivore {get{return _isCarnivore;} set{_isCarnivore = value;}}
 
-
-        public bool IsNocturnal {get{return _isNocturnal;} set{;}}
-
+        public virtual bool IsNocturnal {get{return _isNocturnal;} set{_isNocturnal = value;}}
 
         public virtual void Eat()
         {
